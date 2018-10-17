@@ -78,7 +78,7 @@ function resetPassword (options, query, tokens, password) {
           resetExpires: null
         })
           .then(() => {
-            throw new errors.BadRequest('Invalid token. Get for a new one. (authManagement)',
+            throw new errors.BadRequest('Invalid token. Get a new one. (authManagement)',
               { errors: { $className: 'badParam' } });
           });
       });
